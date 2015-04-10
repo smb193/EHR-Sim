@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Honors_Project.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="~/Style/style.css" rel="stylesheet" type="text/css" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false"
+            SiteMapProvider="SiteMap" />
+        <asp:Menu ID="Menu" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" />
+        <div id="login" style="text-align:right"><asp:LoginName ID="LoginName2" runat="server" Font-Bold = "true" /> <asp:LoginStatus ID="LoginStatus2" runat="server" /></div>
+        <hr style="clear:both" /><br />
+        <asp:ContentPlaceHolder ID="Main" runat="server" />
+        <br />
+        <asp:ContentPlaceHolder ID="Footer" runat="server" />
+        <iframe id="refresh" src="~/refresh.aspx"
+            frameborder="no" width="0" height="0" runat="server"></iframe>
+    </form>
+</body>
+</html>

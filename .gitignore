@@ -183,7 +183,7 @@ UpgradeLog*.htm
 FakesAssemblies/
 
 # Config Files(contain server passwords)
-.config
+*.config
 
 # =========================
 # Operating System Files

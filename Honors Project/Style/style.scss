@@ -1,0 +1,91 @@
+﻿$fonts: Verdana, Helvetica;
+$bg-color: #e9dafe;
+
+$l1-bg: #fdff4f;
+$l2-bg: #fdff78;
+$hover-bg: #4b0dff;
+$menu-border: 1px solid #000;
+$menu-padding: 5px 10px 5px 10px;
+
+body {
+    font-family: $fonts;
+    background-color: $bg-color;
+}
+
+#Menu {
+    li {
+        border: $menu-border;
+        padding: $menu-padding;
+    }
+}
+
+.level1 {
+    background-color: $l1-bg;
+
+    a {
+        box-shadow: none;
+        background-color: rgba(0, 0, 0, 0.00);
+    }
+    a:link, a:visited {
+        color: #000;
+    }
+
+    a:hover {
+        color: #fa00af;
+    }
+
+    box-shadow: rgba(0,0,0,0.3) 4px 4px;
+
+    li:hover {
+        background-color: $hover-bg;
+    }
+}
+
+.level2 {
+    background-color: $l2-bg;
+    a {
+        box-shadow: none;
+        background-color: rgba(0, 0, 0, 0.00);
+    }
+    a:link, a:visited {
+        color: #000;
+    }
+
+    a:hover {
+        color: #fa00af;
+        background-color: rgba(0, 0, 0, 0.00);
+    }
+
+    box-shadow: rgba(0,0,0,0.3) 4px 4px;
+
+    li:hover {
+        background-color: $hover-bg;
+    }
+}
+
+#login {
+    float: right;
+}
+
+a, li {
+    -webkit-transition: color .3s linear, background-color .3s linear;
+    -moz-transition: color .3s linear, background-color .3s linear;
+    -o-transition: color .3s linear, background-color .3s linear;
+    transition: color .3s linear, background-color .3s linear;
+}
+
+a:link {
+    color: #00008b;
+}
+
+a:visited {
+    color: #3000bb;
+}
+
+a:hover {
+    color: #ff00ff;
+}
+
+table {
+    border: 2px #c29416;
+}
