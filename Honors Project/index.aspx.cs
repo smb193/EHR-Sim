@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using System.Data;
 using System.Web.Security;
 
 namespace Honors_Project
@@ -18,6 +12,10 @@ namespace Honors_Project
                 FormsAuthentication.RedirectToLoginPage();
             }
         }
-
+        protected string SetNavigateUrl(object ID)
+        {
+            string url = "~/ViewClass.aspx?id=" + ID.ToString();
+            return url;
+        }
     }
 }

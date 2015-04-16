@@ -65,6 +65,7 @@
     <None Include="Properties\PublishProfiles\smb193-hrp.pubxml" />
     <Content Include="Master\Site.Master" />
     <Content Include="refresh.aspx" />
+    <Content Include="response.aspx" />
     <Content Include="Style\style.css">
       <DependentUpon>style.scss</DependentUpon>
     </Content>
@@ -75,7 +76,9 @@
     <Content Include="Teach\Classes.aspx" />
     <Content Include="Teach\EditPatient.aspx" />
     <Content Include="Teach\Patients.aspx" />
+    <Content Include="Teach\response.aspx" />
     <Content Include="Teach\ViewClass.aspx" />
+    <Content Include="Teach\ViewResponses.aspx" />
     <Content Include="Teach\Web.config" />
     <Content Include="Style\style.scss" />
     <Content Include="Style\style.css.map">
@@ -94,6 +97,7 @@
     <Content Include="login.aspx" />
     <Content Include="register.aspx" />
     <Content Include="Teach\AddPatient.aspx" />
+    <Content Include="ViewClass.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -159,6 +163,13 @@
     <Compile Include="Master\Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
+    <Compile Include="response.aspx.cs">
+      <DependentUpon>response.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="response.aspx.designer.cs">
+      <DependentUpon>response.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Teach\AddClass.aspx.cs">
       <DependentUpon>AddClass.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -194,11 +205,32 @@
     <Compile Include="Teach\Patients.aspx.designer.cs">
       <DependentUpon>Patients.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Teach\response.aspx.cs">
+      <DependentUpon>response.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teach\response.aspx.designer.cs">
+      <DependentUpon>response.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Teach\ViewClass.aspx.cs">
       <DependentUpon>ViewClass.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Teach\ViewClass.aspx.designer.cs">
+      <DependentUpon>ViewClass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teach\ViewResponses.aspx.cs">
+      <DependentUpon>ViewResponses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teach\ViewResponses.aspx.designer.cs">
+      <DependentUpon>ViewResponses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewClass.aspx.cs">
+      <DependentUpon>ViewClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewClass.aspx.designer.cs">
       <DependentUpon>ViewClass.aspx</DependentUpon>
     </Compile>
   </ItemGroup>

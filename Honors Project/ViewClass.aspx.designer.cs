@@ -7,28 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Honors_Project.Teach {
+namespace Honors_Project {
     
     
     public partial class ViewClass {
-        
-        /// <summary>
-        /// StudentSrc control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource StudentSrc;
-        
-        /// <summary>
-        /// PatientSrc control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource PatientSrc;
         
         /// <summary>
         /// gvPatients control.
@@ -40,12 +22,12 @@ namespace Honors_Project.Teach {
         protected global::System.Web.UI.WebControls.GridView gvPatients;
         
         /// <summary>
-        /// gvStudents control.
+        /// PatientSrc control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvStudents;
+        protected global::System.Web.UI.WebControls.SqlDataSource PatientSrc;
     }
 }

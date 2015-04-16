@@ -21,7 +21,12 @@
                     <asp:Label ID="year" runat="server" Text='<%# Eval("Semester").ToString() + Eval("Year").ToString() %>' />
                 </ItemTemplate>
             </asp:TemplateField>
+            <asp:TemplateField HeaderText="View Homework" ItemStyle-HorizontalAlign="Center">
+                <ItemTemplate>
+                    <asp:HyperLink ID="ViewClass" runat="server" NavigateUrl='<%# SetNavigateUrl(Eval("ID")) %>' Text="[x]" />
+                </ItemTemplate>
+            </asp:TemplateField>
         </Columns>
     </asp:GridView>
-    <asp:HyperLink NavigateUrl="~/apply.aspx" runat="server" ID="applylink" Text="Click here to apply for a class" />
+    <asp:HyperLink NavigateUrl="~/apply.aspx" runat="server" ID="applylink" Text="Click here to apply for a new class" />
 </asp:Content>

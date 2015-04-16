@@ -40,6 +40,24 @@ namespace Honors_Project.Teach {
         protected global::System.Web.UI.WebControls.Button addButton;
         
         /// <summary>
+        /// classList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList classList;
+        
+        /// <summary>
+        /// patientButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button patientButton;
+        
+        /// <summary>
         /// PatientSrc control.
         /// </summary>
         /// <remarks>
@@ -47,5 +65,14 @@ namespace Honors_Project.Teach {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource PatientSrc;
+        
+        /// <summary>
+        /// ClassSrc control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource ClassSrc;
     }
 }
